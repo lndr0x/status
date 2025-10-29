@@ -1,36 +1,41 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: lndr0x
+repo: status
+user-agent: lndr0x
 
+# Add your sites here
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: Placeholder Site (Will be replaced )
+    url: https://example.com
 
+# Status website
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
+  # Add your custom domain below, or remove the next line if you don't have a custom domain
+  # cname: demo.upptime.js.org
+  # Choose a name for your status site
+  name: Status Page
+  # Theme
+  theme: light
+  # Logo
+  # logo-url: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  # Intro text
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  introMessage: This status page is powered by **Upptime** and is currently monitoring the placeholder site.
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Upptime schedule
+workflowSchedule:
+  graphs: "0 0 * * *"
+  responseTime: "0 0 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
+  update: "*/5 * * * *"
+
+# commit messages
+commitMessages:
+  commitAuthorName: "Upptime Bot"
+  commitAuthorEmail: "73812580+upptime-bot@users.noreply.github.com"
